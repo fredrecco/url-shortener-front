@@ -1,0 +1,1 @@
+export const copyShort = (url: string) => navigator.clipboard.writeText(url);
