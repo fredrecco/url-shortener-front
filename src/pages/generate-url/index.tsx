@@ -1,6 +1,6 @@
 import { useContext, useState } from "react";
 import { startsWithHttp, urlValidate } from "../../components/utils/validate";
-import { HistoryContext } from "../../context/history";
+// import { HistoryContext } from "../../context/history";
 import GreaterThan from "../../common/icon/greater-than";
 import { ModalContext } from "../../context/modal";
 
@@ -9,7 +9,7 @@ const GenerateUrl = () => {
   const baseUrl = import.meta.env.VITE_SOME_BASE_URL;
   const key = import.meta.env.VITE_SOME_KEY;
   const modalContext = useContext(ModalContext);
-  const historyContext = useContext(HistoryContext);
+  // const historyContext = useContext(HistoryContext);
 
   const generate = (event: React.FormEvent) => {
     event.preventDefault();
